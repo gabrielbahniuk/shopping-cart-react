@@ -15,10 +15,6 @@ interface Product {
   image: string;
   amount: number;
 }
-interface ProductFormatted extends Product {
-  priceFormatted: string;
-  subTotal: number;
-}
 
 const Cart = (): JSX.Element => {
   const { cart, removeProduct, updateProductAmount } = useCart();
